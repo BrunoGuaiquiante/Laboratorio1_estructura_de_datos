@@ -62,12 +62,13 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    int sumatoria=0;
-   while(L!=NULL){
-      int* n=first(L);
-      int numero=*n;
-      sumatoria=sumatoria+numero;
-      popFront(L);
+   int*n=(int*)first(L);
+   while(n!=NULL){
+      sumatoria=sumatoria+*n;
+      n=(int*)next(L);
    }
+
+   
    return sumatoria;
 }
 
