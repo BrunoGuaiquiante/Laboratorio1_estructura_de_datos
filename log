@@ -2,3 +2,19 @@ Thu Aug 13 09:45:16 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 e603977
+Sun Aug 16 11:15:44 PM UTC 2026: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:29: error: implicit declaration of function ‘size_type’ [-Wimplicit-function-declaration]
+   48 |       void* n=(void*)malloc(size_type(int));
+      |                             ^~~~~~~~~
+exercises.c:48:39: error: expected expression before ‘int’
+   48 |       void* n=(void*)malloc(size_type(int));
+      |                                       ^~~
+exercises.c:49:8: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   49 |       n=i;
+      |        ^
+03b9ac9
