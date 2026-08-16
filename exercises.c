@@ -65,7 +65,7 @@ int sumaLista(List *L) {
    while(L!=NULL){
       int* n=first(L);
       int numero=*n;
-      sumatoria+=numero;
+      sumatoria=sumatoria+numero;
       popFront(L);
    }
    return sumatoria;
