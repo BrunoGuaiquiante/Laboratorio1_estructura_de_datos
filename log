@@ -18,3 +18,19 @@ exercises.c:49:8: error: assignment to ‘void *’ from ‘int’ makes pointer
    49 |       n=i;
       |        ^
 03b9ac9
+Sun Aug 16 11:17:09 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:29: error: implicit declaration of function ‘size_type’ [-Wimplicit-function-declaration]
+   48 |       void* n=(void*)malloc(size_type(void*));
+      |                             ^~~~~~~~~
+exercises.c:48:39: error: expected expression before ‘void’
+   48 |       void* n=(void*)malloc(size_type(void*));
+      |                                       ^~~~
+exercises.c:49:8: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   49 |       n=i;
+      |        ^
+d0fcdad
