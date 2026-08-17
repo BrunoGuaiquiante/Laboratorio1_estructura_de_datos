@@ -85,3 +85,20 @@ exercises.c:104:19: error: assignment to ‘void *’ from ‘int’ makes point
   104 |    while((elemento=pop(P1)!=NULL)){
       |                   ^
 04017e3
+Mon Aug 17 12:22:26 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:104:35: error: expected statement before ‘)’ token
+  104 |    while((elemento=pop(P1))!=NULL)){
+      |                                   ^
+exercises.c:104:4: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+  104 |    while((elemento=pop(P1))!=NULL)){
+      |    ^~~~~
+exercises.c:104:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+  104 |    while((elemento=pop(P1))!=NULL)){
+      |                                    ^
+cc1: all warnings being treated as errors
+7e8a7b4
