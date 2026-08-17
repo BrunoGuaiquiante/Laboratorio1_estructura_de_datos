@@ -75,3 +75,13 @@ Mon Aug 17 12:09:50 AM UTC 2026:
  tests:  3|2
 total_score: 40/70
 36b7b24
+Mon Aug 17 12:20:21 AM UTC 2026: 
+ exercises.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:104:19: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  104 |    while((elemento=pop(P1)!=NULL)){
+      |                   ^
+04017e3
