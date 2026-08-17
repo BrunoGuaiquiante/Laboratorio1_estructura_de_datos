@@ -56,3 +56,16 @@ Sun Aug 16 11:51:36 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 92cbdb5
+Mon Aug 17 12:09:31 AM UTC 2026: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:88:23: error: expected ‘;’ before ‘}’ token
+   88 |          popCurrent(L)
+      |                       ^
+      |                       ;
+   89 |       }
+      |       ~                
+20f384f
